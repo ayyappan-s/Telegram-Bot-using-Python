@@ -68,7 +68,7 @@ def message(update, context):
 
             ]
     for msg in splitted_msg:
-        if msg in ["tips", "tip", "protection", "secure", "prevention"]:
+        if msg in ["tips", "tip", "protection", "secure", "prevention","prevent"]:
                         context.bot.send_message(chat_id=update.message.chat_id, text=tips[0],parse_mode=telegram.ParseMode.HTML)
 
         if msg in ["hi", "hello", "hai", "good morning"]: greet(update, context)
